@@ -1,3 +1,6 @@
+Repository Name: ecommerce-project-srishti kathoute
+A responsive and user-friendly e-commerce website built using modern web development technologies. This project showcases product listings, cart functionality, secure checkout, and dynamic user interaction. Designed and developed by Chaaru as part of her portfolio to demonstrate practical skills in HTML, CSS, JavaScript, and PHP/MySQL integration.
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,7 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Srishti Kathoute — Portfolio</title>
   <style>
-    /* ---------- Base / Reset ---------- */
     :root{
       --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#7c3aed; --glass: rgba(255,255,255,0.04);
       --max-width:1100px;
@@ -15,8 +17,6 @@
     html,body{height:100%;margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:linear-gradient(180deg,#071029 0%, #081428 100%); color:#e6eef6}
     a{color:var(--accent); text-decoration:none}
     img{max-width:100%;height:auto;display:block}
-
-    /* ---------- Layout ---------- */
     .container{max-width:var(--max-width);margin:0 auto;padding:28px}
     header{display:flex;align-items:center;justify-content:space-between;gap:18px}
     .brand{display:flex;align-items:center;gap:12px}
@@ -24,24 +24,19 @@
     nav{display:flex;gap:12px;align-items:center}
     nav a{padding:8px 12px;border-radius:8px;color:var(--muted);font-weight:600}
     nav a:hover{background:var(--glass);color:#e6eef6}
-
-    main{margin-top:28px}
+main{margin-top:28px}
     .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:center;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:12px}
     .intro h1{margin:0;font-size:28px}
     .intro p{color:var(--muted);line-height:1.6}
     .cta{margin-top:16px;display:flex;gap:10px}
     .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
     .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06)}
-
-    /* ---------- Cards & Projects ---------- */
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
     .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
     .card h3{margin:0 0 8px 0}
     .muted{color:var(--muted);font-size:14px}
     .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
     .skill{background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:999px;font-size:13px}
-
-    /* ---------- To-do app styles ---------- */
     .todo{display:flex;flex-direction:column;gap:8px}
     .todo input[type=text]{padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
     .todo ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
@@ -51,14 +46,9 @@
     .task button{margin-left:auto;background:transparent;border:0;color:var(--muted);cursor:pointer;font-size:14px;padding:4px 8px;border-radius:6px;transition:color 0.2s}
     .task button:hover{color:#ff4444}
     .task input[type="checkbox"]{width:18px;height:18px;cursor:pointer;accent-color:var(--accent);}
-
-
-    /* ---------- Footer / Contact ---------- */
     footer{margin-top:28px;padding:20px;text-align:center;color:var(--muted)}
     form.contact{display:flex;flex-direction:column;gap:10px}
     input, textarea{padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
-
-    /* ---------- Responsive ---------- */
     @media (max-width:1000px){
       .grid{grid-template-columns:repeat(2,1fr)}
       .hero{grid-template-columns:1fr 320px}
@@ -88,8 +78,7 @@
         <a href="#contact">Contact</a>
       </nav>
     </header>
-
-    <main>
+<main>
       <section class="hero" id="about">
         <div class="intro">
           <h1>Showcasing Web Development Skills</h1>
@@ -115,8 +104,7 @@
           </div>
         </aside>
       </section>
-
-      <section id="projects" style="margin-top:40px">
+<section id="projects" style="margin-top:40px">
         <h2>Projects & Key Learning Areas</h2>
         <div class="grid">
           <!-- Project 1 -->
@@ -130,8 +118,6 @@
               <li>Variables and dark theme implementation</li>
             </ul>
           </div>
-
-          <!-- Project 2 -->
           <div class="card">
             <h3>Project 2 — Responsive Landing Page</h3>
             <p class="muted">Description: Building a page that adapts seamlessly to all screen sizes, crucial for modern web experiences.</p>
@@ -142,8 +128,6 @@
               <li>Mobile-first design principles</li>
             </ul>
           </div>
-
-          <!-- Project 3 -->
           <div class="card">
             <h3>Project 3 — Interactive To-Do List</h3>
             <p class="muted">Description: A core application demonstrating client-side state management and user interactivity using raw JavaScript.</p>
@@ -154,8 +138,6 @@
               <li>Local Storage persistence</li>
             </ul>
           </div>
-
-          <!-- Project 4 -->
           <div class="card">
             <h3>Project 4 — Basic Blog Application (Backend focus)</h3>
             <p class="muted">Description: Focused on setting up a server and database connection to handle content creation, retrieval, and storage.</p>
@@ -166,8 +148,6 @@
               <li>CRUD operations (Create, Read, Update, Delete)</li>
             </ul>
           </div>
-
-          <!-- Project 5 -->
           <div class="card">
             <h3>Project 5 — E-Commerce Website (Full Stack)</h3>
             <p class="muted">Description: A complex, large-scale project integrating frontend components with authentication and transactional backend logic.</p>
@@ -178,8 +158,6 @@
               <li>Payment gateway integration concepts</li>
             </ul>
           </div>
-
-          <!-- Project 6 -->
           <div class="card">
             <h3>Project 6 — Real-Time Chat Application</h3>
             <p class="muted">Description: Focuses on establishing persistent, low-latency connections for instantaneous data exchange between users.</p>
@@ -192,8 +170,6 @@
           </div>
         </div>
       </section>
-
-      <!-- ---------- Interactive To-Do Demo ---------- -->
       <section id="todo" style="margin-top:40px">
         <h2>Interactive To-Do List (Demo)</h2>
         <div class="card">
@@ -207,8 +183,6 @@
           </div>
         </div>
       </section>
-
-      <!-- ---------- Contact ---------- -->
       <section id="contact" style="margin-top:40px">
         <h2>Contact</h2>
         <div class="card">
@@ -224,57 +198,39 @@
           <div id="contact-status" class="muted" style="margin-top:10px; display: none;"></div>
         </div>
       </section>
-
-    </main>
-
+</main>
     <footer>
       Built with ❤ by Srishti Kathoute • Demo portfolio — for learning and showcasing projects
     </footer>
   </div>
-
-  <script>
-    // Constants for Firebase (MANDATORY variables for the Canvas environment)
+<script>
     const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
     const firebaseConfig = typeof _firebase_config !== 'undefined' ? JSON.parse(_firebase_config) : null;
-
-    // We will use LocalStorage for the To-Do list since Firebase setup is not strictly required for this simple demo, 
-    // and the original code used it. We'll improve the contact form behavior instead of using alert().
-
-    // ---------- To-Do App Logic (using Local Storage for simple persistence) ----------
     const input = document.getElementById('todo-input');
     const addBtn = document.getElementById('add-btn');
     const list = document.getElementById('task-list');
-
-    // Load from localStorage
     let tasks = JSON.parse(localStorage.getItem('sk_tasks') || '[]');
-
-    function save(){ localStorage.setItem('sk_tasks', JSON.stringify(tasks)); }
-
-    function render(){
+function save(){ localStorage.setItem('sk_tasks', JSON.stringify(tasks)); }
+function render(){
       list.innerHTML = '';
       tasks.forEach((t, i) => {
         const li = document.createElement('li'); 
         li.className='task' + (t.done? ' completed':'');
-
-        const chk = document.createElement('input'); 
+ const chk = document.createElement('input'); 
         chk.type='checkbox'; 
         chk.checked = !!t.done;
         chk.addEventListener('change', ()=>{ t.done = chk.checked; save(); render(); });
-
         const label = document.createElement('div'); 
         label.className='label'; 
         label.textContent = t.text; 
-        label.style.flex = '1'; // Make label take up space
+        label.style.flex = '1'; 
         label.style.cursor='pointer';
-        
-        // edit on double click
         label.addEventListener('dblclick', ()=>{
           const ed = document.createElement('input'); 
           ed.type='text'; 
           ed.value = t.text; 
           ed.style.flex='1';
-          
-          const finalizeEdit = () => { 
+           const finalizeEdit = () => { 
             const newText = ed.value.trim();
             if(newText) {
                 t.text = newText;
@@ -282,20 +238,15 @@
             save(); 
             render(); 
           }
-
-          ed.addEventListener('keydown', (e)=>{ 
+ed.addEventListener('keydown', (e)=>{ 
             if(e.key==='Enter'){ 
                 finalizeEdit();
             } 
           });
-
-          // Revert if focus is lost (blur)
           ed.addEventListener('blur', finalizeEdit);
-          
           li.replaceChild(ed, label); 
           ed.focus();
         });
-        
         const del = document.createElement('button'); 
         del.textContent='Remove';
         del.addEventListener('click', ()=>{ 
@@ -303,14 +254,11 @@
             save(); 
             render(); 
         });
-
-        li.appendChild(chk); 
+li.appendChild(chk); 
         li.appendChild(label); 
         li.appendChild(del);
         list.appendChild(li);
       });
-
-      // If list is empty, display a message
       if(tasks.length === 0) {
         const emptyMsg = document.createElement('div');
         emptyMsg.textContent = "Your list is empty. Add a new task above!";
@@ -320,8 +268,7 @@
         list.appendChild(emptyMsg);
       }
     }
-
-    addBtn.addEventListener('click', ()=>{
+addBtn.addEventListener('click', ()=>{
       const val = input.value.trim(); 
       if(!val) return; 
       tasks.push({text:val, done:false}); 
@@ -329,31 +276,21 @@
       save(); 
       render();
     });
-
-    input.addEventListener('keydown', (e)=>{ 
+input.addEventListener('keydown', (e)=>{ 
         if(e.key==='Enter'){ 
             addBtn.click(); 
         } 
     });
-
-    // initialize
     render();
-
-    // ---------- Contact (demo) - Replaced alert() with a message box ----------
     function handleContact(e){ 
         e.preventDefault(); 
-        
         const nameInput = document.getElementById('name');
         const emailInput = document.getElementById('email');
         const messageInput = document.getElementById('message');
         const statusDiv = document.getElementById('contact-status');
-
-        const name = nameInput.value;
-        
+const name = nameInput.value;
         statusDiv.textContent = Thank you, ${name}! This is a demo contact form. A real website would send this message to a server.;
         statusDiv.style.display = 'block';
-        
-        // Clear inputs after 3 seconds and hide status
         e.target.reset();
         setTimeout(() => {
             statusDiv.style.display = 'none';
